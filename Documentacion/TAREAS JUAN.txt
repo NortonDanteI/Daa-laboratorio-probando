@@ -1,7 +1,7 @@
 TAREAS JUAN:
 
 *Desarrollar algoritmo Insertion Sort.
-*Código fuente.
+*Cï¿½digo fuente.
 *Pruebas jUnit.
 *Documentacion en javadoc.
 *Diagrama de clase UML.
@@ -10,11 +10,11 @@ Y obtener la instancia del algoritmo desarrollado es decir el estado del algorit
 
 (El estado del algoritmo muestralo con System.out.println luego yo agarrare esos imprimir y los acomodare en una interfaz grafica).
 
-DOCUMENTACIÓN:
+DOCUMENTACIï¿½N:
 
 *Desarrollo de software.
-*Algoritmos desarrollados y métodos utilizados.
-*Documenta aspectos técnicos del desarrollo, como análisis, diseño e implementación.
+*Algoritmos desarrollados y mï¿½todos utilizados.
+*Documenta aspectos tï¿½cnicos del desarrollo, como anï¿½lisis, diseï¿½o e implementaciï¿½n.
 
 Probar con primitivos int:
 Orden de magnitud 1: 10, 20, 30, 40, 50, 60, 70, 80, 90.
