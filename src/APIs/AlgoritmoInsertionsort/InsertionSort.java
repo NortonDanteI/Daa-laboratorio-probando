@@ -92,7 +92,7 @@ public class InsertionSort {
 					lista.set(j, lista.get(j-1));
 					lista.set(j-1, auxE);
 					
-					//{imprimir orden}
+					imprimirListaEstudiante(lista);
 					
 				}
 			}
@@ -115,7 +115,7 @@ public class InsertionSort {
 					lista.set(j, lista.get(j-1));
 					lista.set(j-1, auxE);
 					
-					//{imprimir orden}
+					imprimirListaEstudiante(lista);
 					
 				}
 			}
@@ -138,7 +138,7 @@ public class InsertionSort {
 					lista.set(j, lista.get(j-1));
 					lista.set(j-1, auxE);
 					
-					//{imprimir orden}
+					imprimirListaEstudiante(lista);
 					
 				}
 			}
@@ -160,7 +160,7 @@ public class InsertionSort {
 					lista.set(j, lista.get(j-1));
 					lista.set(j-1, auxE);
 					
-					//{imprimir orden}
+					imprimirListaEstudiante(lista);
 					
 				}
 			}
@@ -168,12 +168,25 @@ public class InsertionSort {
 	}
 	
 	/**
-	 * Metodo de impresion de datos en la Lista de enteros,
-	 * ordenados, y en su proceso de orden
+	 * Metodo de impresion de datos en la Lista de enteros
 	 * @param lista
 	 */
 	public static void imprimirListaEnteros(ArrayList<Integer> lista) {
 		System.out.println(lista);
+	}
+	
+	/**
+	 * Metodo de impresion de lista de @Estudiante
+	 * @param lista
+	 */
+	public static void imprimirListaEstudiante(ArrayList<Estudiante> lista) {
+		int tam = lista.size();
+		for(int i = 0;i < tam;i++) {
+			System.out.print("  Nombre: "+lista.get(i).getNombre());
+			System.out.print("  Apellido: "+lista.get(i).getApellido());
+			System.out.print("  Edad: "+lista.get(i).getEdad());
+			System.out.println("  Nota: "+lista.get(i).getNota());
+		}
 	}
 
 

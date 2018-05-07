@@ -12,7 +12,7 @@ import Modelo.Estudiante;
 
 class InsertionTest {
 
-	/*@Test
+	@Test
 	void testEnteros() {
 		ArrayList<Integer> lista = new ArrayList<>();
 		ArrayList<Integer> L= new ArrayList<>();
@@ -20,7 +20,9 @@ class InsertionTest {
 		int j = 0;
 		
 		for(int i = 1;i < 30;i++) {
-			j = new SecureRandom().nextInt(100)+1;
+			do{
+				j = new SecureRandom().nextInt(100)+1;
+			}while(lista.contains(j));
 			System.out.println(j);
 			InsertionSort.insertarListaEnteros(lista,j);
 			L.add(j);
@@ -35,9 +37,9 @@ class InsertionTest {
 		InsertionSort.imprimirListaEnteros(L);
 		
 		assertEquals(L, lista);
-	}*/
+	}
 	
-	/**/@Test
+	@Test
 	void testNombre() {
 		ArrayList<Estudiante> lista = new ArrayList<>();
 		String n1 = "pablo";
@@ -46,29 +48,26 @@ class InsertionTest {
 		lista.add(new Estudiante(n1,n2));
 		lista.add(new Estudiante(n2,n1));
 		
+		System.out.println("Ordenando por nombre");
 		InsertionSort.ordenarListaNombre(lista);
 		
-		for(int i = 0;i < lista.size();i++) {
-			System.out.print(lista.get(i).getNombre()+" ");
-			System.out.println(lista.get(i).getApellido());
-		}
-	}/**/
+		InsertionSort.imprimirListaEstudiante(lista);
+	}
 	
-	/*@Test
+	@Test
 	void testApellido() {
 		ArrayList<Estudiante> lista = new ArrayList<>();
 		String n1 = "pablo";
 		String n2 = "juan";
 		
+		
 		lista.add(new Estudiante(n2,n1));
 		lista.add(new Estudiante(n1,n2));
 		
+		System.out.println("Ordenando por apellido");
 		InsertionSort.ordenarListaApellido(lista);
 		
-		for(int i = 0;i < lista.size();i++) {
-			System.out.print(lista.get(i).getNombre()+" ");
-			System.out.println(lista.get(i).getApellido());
-		}
-	}*/
+		InsertionSort.imprimirListaEstudiante(lista);
+	}
 
 }
