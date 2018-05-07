@@ -37,7 +37,7 @@ class InsertionTest {
 		assertEquals(L, lista);
 	}*/
 	
-	@Test
+	/**/@Test
 	void testNombre() {
 		ArrayList<Estudiante> lista = new ArrayList<>();
 		String n1 = "pablo";
@@ -49,10 +49,12 @@ class InsertionTest {
 		InsertionSort.ordenarListaNombre(lista);
 		
 		for(int i = 0;i < lista.size();i++) {
-			System.out.println(lista.get(i).getNombre());
+			System.out.print(lista.get(i).getNombre()+" ");
+			System.out.println(lista.get(i).getApellido());
 		}
-	}
-	@Test
+	}/**/
+	
+	/*@Test
 	void testApellido() {
 		ArrayList<Estudiante> lista = new ArrayList<>();
 		String n1 = "pablo";
@@ -64,8 +66,9 @@ class InsertionTest {
 		InsertionSort.ordenarListaApellido(lista);
 		
 		for(int i = 0;i < lista.size();i++) {
+			System.out.print(lista.get(i).getNombre()+" ");
 			System.out.println(lista.get(i).getApellido());
 		}
-	}
+	}*/
 
 }

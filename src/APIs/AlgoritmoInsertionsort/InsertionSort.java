@@ -8,7 +8,11 @@ import java.util.ArrayList;
 import Modelo.Estudiante;
 
 /**
- * @author juan_
+ * InsertionSort, ordenamiento de insersion, inserta ordenadamente
+ * los parametros entregados. ademas de usar su metdo de ordenamiento
+ * para ordenar listas previas.
+ * 
+ * @author Juan Pablo Valdivia Astudillo
  *
  */
 public class InsertionSort {
@@ -23,10 +27,10 @@ public class InsertionSort {
 	public static void insertarListaEnteros(ArrayList<Integer> lista, int valor){
 		
 		if(!lista.contains(valor)) {
+			lista.add(valor);
 		}else {
 			System.out.print("(el valor existe) ");
 		}
-		lista.add(valor);
 		
 		if(lista.size() > 1) {
 			ordenarListaEnteros(lista);
@@ -73,6 +77,10 @@ public class InsertionSort {
 		}
 	}
 
+	/**
+	 * Metodo de ordenamiento de Clase @Estudiante, por nombre
+	 * @param lista
+	 */
 	public static void ordenarListaNombre(ArrayList<Estudiante> lista) {
 		int tam = lista.size();
 		
@@ -92,8 +100,12 @@ public class InsertionSort {
 		
 	}
 
+	/**
+	 * Metodo de ordenamiento de la Clase @Estudiante, por apellido
+	 * @param lista
+	 */
 	public static void ordenarListaApellido(ArrayList<Estudiante> lista) {
-int tam = lista.size();
+		int tam = lista.size();
 		
 		for(int i = 0;i < tam;i++) {
 			Estudiante auxE = lista.get(i);
@@ -111,12 +123,48 @@ int tam = lista.size();
 	}
 
 
-	private static void ordenarListaEdad(ArrayList<Estudiante> lista) {
+	/**
+	 * Metodo de ordenamiento por edad, de la clase @Estudiante
+	 * @param lista
+	 */
+	public static void ordenarListaEdad(ArrayList<Estudiante> lista) {
+		int tam = lista.size();
 		
+		for(int i = 0;i < tam;i++) {
+			Estudiante auxE = lista.get(i);
+			int aux = auxE.getEdad();
+			for(int j = i;j > 0;j--) {
+				if(aux < lista.get(j-1).getEdad()) {
+					lista.set(j, lista.get(j-1));
+					lista.set(j-1, auxE);
+					
+					//{imprimir orden}
+					
+				}
+			}
+		}
 	}
 
-	private static void ordenarListaNota(ArrayList<Estudiante> lista) {
+	/**
+	 * Metodo de ordenamiento por notas, de la clase @Estudiante
+	 * @param lista
+	 */
+	public static void ordenarListaNota(ArrayList<Estudiante> lista) {
+		int tam = lista.size();
 		
+		for(int i = 0;i < tam;i++) {
+			Estudiante auxE = lista.get(i);
+			double aux = auxE.getNota();
+			for(int j = i;j > 0;j--) {
+				if(aux < lista.get(j-1).getNota()) {
+					lista.set(j, lista.get(j-1));
+					lista.set(j-1, auxE);
+					
+					//{imprimir orden}
+					
+				}
+			}
+		}
 	}
 	
 	/**
