@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 
 import APIs.AlgoritmoInsertionsort.InsertionSort;
+import Modelo.Estudiante;
 
 class InsertionTest {
 
@@ -34,6 +35,20 @@ class InsertionTest {
 		InsertionSort.imprimirListaEnteros(L);
 		
 		assertEquals(L, lista);
+	}
+	
+	@Test
+	void testNombre() {
+		ArrayList<Estudiante> lista = new ArrayList<>();
+		String n1 = "pablo";
+		String n2 = "juan";
+		
+		lista.add(new Estudiante(n1,n2));
+		lista.add(new Estudiante(n2,n1));
+		
+		InsertionSort.ordenarListaNombre(lista);
+		
+		System.out.println(lista.listIterator().getClass().getName());
 	}
 
 }

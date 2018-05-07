@@ -33,6 +33,24 @@ public class InsertionSort {
 		}
 		
 	}
+	
+	public static void insertarListaClase(ArrayList<Estudiante> lista, Estudiante est) {
+		if(!lista.contains(est)) {
+			lista.add(est);
+		}else {
+			System.out.println("el valor existe");
+		}
+		
+		if(lista.size() > 1) {
+			ordenarListaNombre(lista);
+		}if(lista.size() > 1) {
+			ordenarListaApellido(lista);
+		}if(lista.size() > 1) {
+			ordenarListaEdad(lista);
+		}if(lista.size() > 1) {
+			ordenarListaNota(lista);
+		}
+	}
 
 	/**
 	 * Ordena la lista generada en @insertarListaEnteros
@@ -54,47 +72,22 @@ public class InsertionSort {
 			}
 		}
 	}
-	
-	/**
-	 * Metodo de imprecion de datos en la Lista de enteros,
-	 * ordenados, y en su proceso de orden
-	 * @param lista
-	 */
-	public static void imprimirListaEnteros(ArrayList<Integer> lista) {
-		System.out.println(lista);
-	}
-	
-	public static void insertarListaClase(ArrayList<Estudiante> lista, Estudiante est) {
-		if(!lista.contains(est)) {
-			lista.add(est);
-		}else {
-			System.out.println("el valor existe");
-		}
-		
-		if(lista.size() > 1) {
-			ordenarListaNombre(lista);
-		}if(lista.size() > 1) {
-			ordenarListaApellido(lista);
-		}if(lista.size() > 1) {
-			ordenarListaEdad(lista);
-		}if(lista.size() > 1) {
-			ordenarListaNota(lista);
-		}
-	}
 
-	private static void ordenarListaNombre(ArrayList<Estudiante> lista) {
+	public static void ordenarListaNombre(ArrayList<Estudiante> lista) {
 		int tam = lista.size();
 		
 		for(int i = 0;i < tam;i++) {
 			String aux = lista.get(i).getNombre();
 			for(int j = i;j > 0;j--) {
-				
+				if(aux.compareTo(lista.get(j-1).getNombre()) < 0) {
+					
+				}
 			}
 		}
 		
 	}
 
-	private static void ordenarListaApellido(ArrayList<Estudiante> lista) {
+	public static void ordenarListaApellido(ArrayList<Estudiante> lista) {
 		
 	}
 
@@ -105,6 +98,15 @@ public class InsertionSort {
 
 	private static void ordenarListaNota(ArrayList<Estudiante> lista) {
 		
+	}
+	
+	/**
+	 * Metodo de impresion de datos en la Lista de enteros,
+	 * ordenados, y en su proceso de orden
+	 * @param lista
+	 */
+	public static void imprimirListaEnteros(ArrayList<Integer> lista) {
+		System.out.println(lista);
 	}
 
 
