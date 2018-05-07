@@ -77,9 +77,14 @@ public class InsertionSort {
 		int tam = lista.size();
 		
 		for(int i = 0;i < tam;i++) {
-			String aux = lista.get(i).getNombre();
+			Estudiante auxE = lista.get(i);
+			String aux = auxE.getNombre();
 			for(int j = i;j > 0;j--) {
 				if(aux.compareTo(lista.get(j-1).getNombre()) < 0) {
+					lista.set(j, lista.get(j-1));
+					lista.set(j-1, auxE);
+					
+					//{imprimir orden}
 					
 				}
 			}
@@ -88,7 +93,21 @@ public class InsertionSort {
 	}
 
 	public static void ordenarListaApellido(ArrayList<Estudiante> lista) {
+int tam = lista.size();
 		
+		for(int i = 0;i < tam;i++) {
+			Estudiante auxE = lista.get(i);
+			String aux = auxE.getApellido();
+			for(int j = i;j > 0;j--) {
+				if(aux.compareTo(lista.get(j-1).getApellido()) < 0) {
+					lista.set(j, lista.get(j-1));
+					lista.set(j-1, auxE);
+					
+					//{imprimir orden}
+					
+				}
+			}
+		}
 	}
 
 

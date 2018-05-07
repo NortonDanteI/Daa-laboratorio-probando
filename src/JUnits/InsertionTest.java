@@ -12,7 +12,7 @@ import Modelo.Estudiante;
 
 class InsertionTest {
 
-	@Test
+	/*@Test
 	void testEnteros() {
 		ArrayList<Integer> lista = new ArrayList<>();
 		ArrayList<Integer> L= new ArrayList<>();
@@ -35,7 +35,7 @@ class InsertionTest {
 		InsertionSort.imprimirListaEnteros(L);
 		
 		assertEquals(L, lista);
-	}
+	}*/
 	
 	@Test
 	void testNombre() {
@@ -48,7 +48,24 @@ class InsertionTest {
 		
 		InsertionSort.ordenarListaNombre(lista);
 		
-		System.out.println(lista.listIterator().getClass().getName());
+		for(int i = 0;i < lista.size();i++) {
+			System.out.println(lista.get(i).getNombre());
+		}
+	}
+	@Test
+	void testApellido() {
+		ArrayList<Estudiante> lista = new ArrayList<>();
+		String n1 = "pablo";
+		String n2 = "juan";
+		
+		lista.add(new Estudiante(n2,n1));
+		lista.add(new Estudiante(n1,n2));
+		
+		InsertionSort.ordenarListaApellido(lista);
+		
+		for(int i = 0;i < lista.size();i++) {
+			System.out.println(lista.get(i).getApellido());
+		}
 	}
 
 }
