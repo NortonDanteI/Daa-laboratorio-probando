@@ -12,7 +12,7 @@ import APIs.AlgoritmoInsertionsort.InsertionSort;
 class InsertionTest {
 
 	@Test
-	void test() {
+	void testEnteros() {
 		ArrayList<Integer> lista = new ArrayList<>();
 		ArrayList<Integer> L= new ArrayList<>();
 		
