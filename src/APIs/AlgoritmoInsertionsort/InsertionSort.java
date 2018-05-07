@@ -5,6 +5,8 @@ package APIs.AlgoritmoInsertionsort;
 
 import java.util.ArrayList;
 
+import Modelo.Estudiante;
+
 /**
  * @author juan_
  *
@@ -56,6 +58,8 @@ public class InsertionSort {
 		System.out.println(lista);
 	}
 	
-	
+	public static void insertarListaEstudiante(ArrayList<Integer> lista, Estudiante est) {
+		
+	}
 
 }
