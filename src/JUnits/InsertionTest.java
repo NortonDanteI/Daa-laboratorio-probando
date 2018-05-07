@@ -24,10 +24,16 @@ class InsertionTest {
 			InsertionSort.insertarListaEnteros(lista,j);
 			L.add(j);
 		}
-		
+		System.out.println();
+		System.out.println("lista de insersion ordenada");
 		InsertionSort.imprimirListaEnteros(lista);
+
+		InsertionSort.imprimirListaEnteros(L);
+		System.out.println("Ordenando lista");
+		InsertionSort.ordenarListaEnteros(L);
+		InsertionSort.imprimirListaEnteros(L);
 		
-		assertEquals(L.contains(j), lista.contains(j));
+		assertEquals(L, lista);
 	}
 
 }
