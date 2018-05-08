@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 
 import APIs.AlgoritmoInsertionsort.InsertionSort;
-import Modelo.Estudiante;
+import Modelo.Alumno;
 
 class InsertionTest {
 
@@ -41,33 +41,33 @@ class InsertionTest {
 	
 	@Test
 	void testNombre() {
-		ArrayList<Estudiante> lista = new ArrayList<>();
+		ArrayList<Alumno> lista = new ArrayList<>();
 		String n1 = "pablo";
 		String n2 = "juan";
 		
-		lista.add(new Estudiante(n1,n2));
-		lista.add(new Estudiante(n2,n1));
+		lista.add(new Alumno(n1,n2));
+		lista.add(new Alumno(n2,n1));
 		
 		System.out.println("Ordenando por nombre");
 		InsertionSort.ordenarListaNombre(lista);
 		
-		InsertionSort.imprimirListaEstudiante(lista);
+		InsertionSort.imprimirListaAlumno(lista);
 	}
 	
 	@Test
 	void testApellido() {
-		ArrayList<Estudiante> lista = new ArrayList<>();
+		ArrayList<Alumno> lista = new ArrayList<>();
 		String n1 = "pablo";
 		String n2 = "juan";
 		
 		
-		lista.add(new Estudiante(n2,n1));
-		lista.add(new Estudiante(n1,n2));
+		lista.add(new Alumno(n2,n1));
+		lista.add(new Alumno(n1,n2));
 		
 		System.out.println("Ordenando por apellido");
 		InsertionSort.ordenarListaApellido(lista);
 		
-		InsertionSort.imprimirListaEstudiante(lista);
+		InsertionSort.imprimirListaAlumno(lista);
 	}
 
 }

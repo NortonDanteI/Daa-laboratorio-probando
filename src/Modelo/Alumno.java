@@ -7,7 +7,7 @@ package Modelo;
  * @author juan_
  *
  */
-public class Estudiante {
+public class Alumno {
 	
 	String nombre;
 	String apellido;
@@ -20,7 +20,7 @@ public class Estudiante {
 	 * @param edad
 	 * @param nota
 	 */
-	public Estudiante(String nombre, String apellido, int edad, double nota) {
+	public Alumno(String nombre, String apellido, int edad, double nota) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
@@ -31,7 +31,7 @@ public class Estudiante {
 	 * @param nombre
 	 * @param apellido
 	 */
-	public Estudiante(String nombre, String apellido) {
+	public Alumno(String nombre, String apellido) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = 0;
@@ -41,7 +41,7 @@ public class Estudiante {
 	/**
 	 * @param edad
 	 */
-	public Estudiante(int edad) {
+	public Alumno(int edad) {
 		this.nombre = "nombre";
 		this.apellido = "apellido";
 		this.edad = edad;
@@ -51,7 +51,7 @@ public class Estudiante {
 	/**
 	 * @param nota
 	 */
-	public Estudiante(double nota) {
+	public Alumno(double nota) {
 		this.nombre = "nombre";
 		this.apellido = "apellido";
 		this.edad = 0;
