@@ -18,7 +18,10 @@ public class TestOrdenaArreglo {
 	
 	@Test
 	public void testOrdenaArreglo() {
-		int[] array1 = new int[]{33,22,13,45,63,60,99,10,78};
+		int[] array1 = new int [10];
+		for(int i=0;i<array1.length;i++) {
+			array1[i]=(int) ((Math.random()*90)+1);
+		}
 		ordena.ordenandoArreglo(array1);
 		System.out.println(Arrays.toString(array1));
 		int[] esperado = ordena.ordenandoArreglo(array1);
