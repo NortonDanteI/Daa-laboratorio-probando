@@ -14,7 +14,7 @@ public class ClickEnAplicarOrden  implements ActionListener {
 	int[] numerosx2;
 	
 //	int[] numeros1 = new int [21];
-//	String numeros;
+//	String numeros;  aplica orden en array
 	OrdenaArreglo ordena1= new OrdenaArreglo();
 	
 	JTextArea estado;

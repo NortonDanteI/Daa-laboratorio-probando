@@ -3,8 +3,6 @@ package Vista;
 
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -18,15 +16,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.LineBorder;
 
-import Controlador.ClickEnAplicarOrden;
-import Controlador.ClickEnAplicarOrdenPorApellido;
-import Controlador.ClickEnGenerarLista;
-import Controlador.ClickEnGenerarNumerosOrdenados;
-import Controlador.ClickEnGenerarNumerosRandom;
+import Controlador.ClickEnArraysSort;
+import Controlador.ClickEnCollectionsSort;
 import Modelo.Alumno;
 
 @SuppressWarnings("serial")
-public class Vista1 extends JFrame implements ActionListener{
+public class Vista1 extends JFrame{
 	//inicializar componentes
 	JButton boton1 = new JButton("Generar numeros ordenados");
 	JButton boton2 = new JButton("Generar numeros aleatorios");
@@ -62,7 +57,7 @@ public class Vista1 extends JFrame implements ActionListener{
 	 
 	int[] numerosx1 = new int[21];
 	
-	ArrayList<Alumno> lista = new ArrayList<>();
+	ArrayList<Alumno> listax = new ArrayList<>();
 	
 	public Vista1() {
 		Container contenedor= getContentPane();
@@ -120,20 +115,16 @@ public class Vista1 extends JFrame implements ActionListener{
        
         boton2.setBounds(20, 75,200,40);
         boton3.setBounds(240,20,180,40);
-//      label4.setBounds(10,60, 440, 20);
 
         panel2.add(boton1);
         panel2.add(boton2);
         panel2.add(boton3);
         
- //       panel1.add(label3);
-   //     panel1.add(label4);
-       
-        item1.addActionListener(this);
-        item2.addActionListener(this);
-        item3.addActionListener(this);
-        item4.addActionListener(this);
-        item5.addActionListener(this);
+//        item1.addActionListener(new ClickEnInsertionSort(boton1,boton2,boton3,boton4,boton5,boton6,boton7));
+//        item2.addActionListener(this);
+ //       item3.addActionListener(this); 
+        item4.addActionListener(new ClickEnArraysSort     (numerosx1,AreaDeTexto1,AreaDeTexto,boton1,boton2,boton3,boton4,boton5,boton6,boton7));
+        item5.addActionListener(new ClickEnCollectionsSort(listax,AreaDeTexto1,AreaDeTexto,boton1,boton2,boton3,boton4,boton5,boton6,boton7));
         
         scrollPane1.setBounds(10, 30, 422,340);
 		scrollPane1.setViewportView(AreaDeTexto1);
@@ -148,42 +139,6 @@ public class Vista1 extends JFrame implements ActionListener{
         contenedor.add(panel1);
 		contenedor.add(panel2);
 		contenedor.add(panel3);
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		if (e.getSource()==item1) {
-        }
-        if (e.getSource()==item2) {
-        }
-        if (e.getSource()==item3) {
-        }
-        if (e.getSource()==item4) {
-        	this.boton3.setText("Aplicar metodo");
-        	this.boton1.setText("Generar numeros ordenados");
-        	this.boton1.addActionListener(new ClickEnGenerarNumerosOrdenados(AreaDeTexto1,numerosx1));
-        	this.boton2.setEnabled(true);
-        	this.boton2.addActionListener(new ClickEnGenerarNumerosRandom(AreaDeTexto1,numerosx1));
-			this.boton3.addActionListener(new ClickEnAplicarOrden(AreaDeTexto1,AreaDeTexto,numerosx1));
-			
-			boton4.setEnabled(false);
-			boton5.setEnabled(false);
-			boton6.setEnabled(false);
-			boton7.setEnabled(false);
-        }
-        if (e.getSource()==item5) {     	
-        	this.boton1.setText("Generar lista");
-        	boton4.setEnabled(true);
-        	this.boton1.addActionListener(new ClickEnGenerarLista(lista,AreaDeTexto1));
-        	this.boton4.addActionListener(new ClickEnAplicarOrdenPorApellido(lista,AreaDeTexto1,AreaDeTexto));
-        	
-        	boton3.setEnabled(false);
-        	boton2.setEnabled(false);
-
-			boton5.setEnabled(true);
-			boton6.setEnabled(true);
-			boton7.setEnabled(true);
-        }
 	}
 }
 

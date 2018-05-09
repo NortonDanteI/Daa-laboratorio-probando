@@ -21,9 +21,9 @@ public class TestVista1 {
 	
 	@Test
 	public void test() {
-		LookAndFeelInfo info[] = UIManager.getInstalledLookAndFeels();
-		for(LookAndFeelInfo look: info)
-		    System.out.println(look.getClassName());
+//		LookAndFeelInfo info[] = UIManager.getInstalledLookAndFeels();
+//		for(LookAndFeelInfo look: info)
+//		    System.out.println(look.getClassName());
 		
 //		UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 		

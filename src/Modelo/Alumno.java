@@ -2,6 +2,7 @@ package Modelo;
 
 import java.util.Comparator;
 
+
 /**
  * 
  * Clase que contiene los atributos de un alumno
@@ -103,6 +104,7 @@ public class Alumno implements Comparable<Alumno> {
 	 */
 	@Override
 	public int compareTo(Alumno al) {
+		System.out.println("Comparando"+this.getApellido()+"Con"+ al.getApellido());
 		return this.getApellido().compareTo(al.getApellido());
 	}
 
@@ -114,6 +116,7 @@ public class Alumno implements Comparable<Alumno> {
 
         @Override
         public int compare(Alumno e1, Alumno e2) {
+        	System.out.println("Comparando"+e1.getEdad()+" Con "+ e2.getEdad()); //COMO COLOCO ESTO EN EL TEXT AREA
             return e1.getEdad() - e2.getEdad();
         }
     };
@@ -125,6 +128,7 @@ public class Alumno implements Comparable<Alumno> {
     	
     	@Override
     	public int compare(Alumno al1, Alumno al2) {
+    		System.out.println("Comparando"+al1.getNombre()+" Con "+ al2.getNombre()); 
     		return al1.getNombre().compareTo(al2.getNombre());
     	}
     };
@@ -136,6 +140,7 @@ public class Alumno implements Comparable<Alumno> {
     	
     	@Override
     	public int compare(Alumno al1, Alumno al2) {
+    		System.out.println("Comparando"+al1.getNotas()+" Con "+ al2.getNotas()); 
     		return Double.compare(al2.getNotas(), al1.getNotas());
     	}
     };

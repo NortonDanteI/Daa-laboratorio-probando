@@ -19,6 +19,7 @@ public class ClickEnGenerarNumerosRandom implements ActionListener {
 		for (int i=0; i<numeros.length; i++) {
 			numeros[i] =(int) ((Math.random()*90)+1);
 		}
+		textocambio1.setText(null);
 		textocambio1.setText(Arrays.toString(numeros));
 	}
 }
