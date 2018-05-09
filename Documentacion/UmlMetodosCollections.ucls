@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="Metodos.collection.OrdenaCollections" project="Tarea3Daa" 
+    file="/Tarea3Daa/src/Metodos/collection/OrdenaCollections.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="331" x="175" y="31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="Metodos.collection.OrdenarPorEdad" project="Tarea3Daa" 
+    file="/Tarea3Daa/src/Metodos/collection/OrdenarPorEdad.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="165" x="546" y="31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Metodos.collection.OrdenarPorNotas" project="Tarea3Daa" 
+    file="/Tarea3Daa/src/Metodos/collection/OrdenarPorNotas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="165" x="751" y="31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Metodos.collection.OrdenarPorNombre" project="Tarea3Daa" 
+    file="/Tarea3Daa/src/Metodos/collection/OrdenarPorNombre.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="165" x="956" y="31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Metodos.collection.Alumno" project="Tarea3Daa" 
+    file="/Tarea3Daa/src/Metodos/collection/Alumno.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="178" x="1161" y="31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
