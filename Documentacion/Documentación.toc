@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}
+\contentsline {section}{\numberline {2}Insertion Sort}{7}
+\contentsline {section}{\numberline {3}Merge sort}{10}
+\contentsline {section}{\numberline {4}Quick.sort}{12}
+\contentsline {section}{\numberline {5}Arrays.sort() y Collections.sort()}{14}
+\contentsline {section}{\numberline {6}Diferencia entre los algoritmos Insertion sort, Merge sort y Quick sort}{16}
+\contentsline {section}{\numberline {7}Diferencias entre Arrays.sort() y Collections.sort() con respecto a los algoritmos de ordenamiento}{17}
+\contentsline {section}{\numberline {8}Conclusi\IeC {\'o}n}{18}
