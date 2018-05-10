@@ -18,6 +18,7 @@ import javax.swing.border.LineBorder;
 
 import Controlador.ClickEnArraysSort;
 import Controlador.ClickEnCollectionsSort;
+import Controlador.ClickEnInsertionSort;
 import Modelo.Alumno;
 
 @SuppressWarnings("serial")
@@ -57,6 +58,7 @@ public class Vista1 extends JFrame{
 	 
 	int[] numerosx1 = new int[21];
 	
+	ArrayList<Integer> L= new ArrayList<>();
 	ArrayList<Alumno> listax = new ArrayList<>();
 	
 	public Vista1() {
@@ -120,9 +122,9 @@ public class Vista1 extends JFrame{
         panel2.add(boton2);
         panel2.add(boton3);
         
-//        item1.addActionListener(new ClickEnInsertionSort(boton1,boton2,boton3,boton4,boton5,boton6,boton7));
-//        item2.addActionListener(this);
- //       item3.addActionListener(this); 
+        item1.addActionListener(new ClickEnInsertionSort(AreaDeTexto1,AreaDeTexto,L,listax,boton1,boton2,boton3,boton4,boton5,boton6,boton7));
+//      item2.addActionListener(this);
+ //     item3.addActionListener(this); 
         item4.addActionListener(new ClickEnArraysSort     (numerosx1,AreaDeTexto1,AreaDeTexto,boton1,boton2,boton3,boton4,boton5,boton6,boton7));
         item5.addActionListener(new ClickEnCollectionsSort(listax,AreaDeTexto1,AreaDeTexto,boton1,boton2,boton3,boton4,boton5,boton6,boton7));
         

@@ -1,7 +1,7 @@
 package JUnits;
 
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
+//import javax.swing.UIManager;
+//import javax.swing.UIManager.LookAndFeelInfo;
 
 import org.junit.Before;
 import org.junit.Test;
