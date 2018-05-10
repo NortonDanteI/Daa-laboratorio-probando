@@ -6,8 +6,9 @@ public class QuickSortGenerico<T extends Comparable<T>>{
 	
 	/**
 	 * Ordena un List con valores genericos usando QuickSort
-	 * @param lista <List> con los datos a ordenar
-	 * @return Retorna un list <List> ordenado.
+	 * @param lista con los datos a ordenar del tipo List
+	 * @return Retorna un list ordenado. El orden aplicado dependera de como se
+	 * declare el compareTo()
 	 */
 	public List<T> OrdenaGenerico(List<T> lista){
 		OrdenaGenerico(lista, 0, lista.size() - 1);
@@ -15,11 +16,12 @@ public class QuickSortGenerico<T extends Comparable<T>>{
 	}
 	
 	/**
-	 * 
-	 * @param lista
-	 * @param a
-	 * @param b
-	 * @return
+	 * Ordena un List con valores genericos usando QuickSort
+	 * @param lista con los datos a ordenar del tipo List
+	 * @param a Inicio del arreglo
+	 * @param b	Final del arrelo 
+	 * @return Retorna un list ordenado. El orden aplicado dependera de como se
+	 * declare el compareTo()
 	 */
 	public List<T> OrdenaGenerico(List<T> lista, int a, int b){
 		

@@ -12,19 +12,19 @@ public class QuickSort {
 	//private int[] arreglo;
 
 	/**
-	 * Recibe un Arreglo de datos finitos y los ordena de mayor a menor usando el metodo QuickSort
-	 * @param arreglo Arreglo de tipo int que se desea ordenar
-	 * @return
+	 * Recibe un Arreglo de datos finitos y los ordena de menor a mayor usando el metodo QuickSort
+	 * @param Arreglo Con valores enteros (integer) sin orden especifico del tipo int[].
+	 * @return Retorna un arreglo de tipo int[] ordenado.
 	 */
 	public int [] OrdenaEnteros(int arreglo[]){
 		return OrdenaEnteros(arreglo, 0, arreglo.length - 1);
 	}
 	/**
-	 * 
-	 * @param arreglo
+	 * Ordena de forma recursiva usando QuickSort una lista de numeros.
+	 * @param Arreglo Con valores enteros (integer) sin orden especifico del tipo int[].
 	 * @param a Inicio del arreglo
-	 * @param b	Final del arrelo
-	 * @param pivote 
+	 * @param b	Final del arrelo 
+	 * @return Retorna un arreglo de tipo int[] ordenado.
 	 */
 	public int[] OrdenaEnteros(int arreglo[], int a, int b){
 
